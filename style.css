@@ -1,8 +1,97 @@
-.jumbotron  {
-    padding: 6rem 1rem;
-    background-color:#e4e5e6  ;
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #38bdf8;
+  --text: #e2e8f0;
 }
 
-#Project{
-    background-color:#ffff  ;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(2,6,23,0.8);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero span {
+  color: var(--primary);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Animation */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
