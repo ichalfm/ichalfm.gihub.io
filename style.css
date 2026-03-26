@@ -5,18 +5,12 @@
   --text: #e2e8f0;
 }
 
-.light {
-  --bg: #ffffff;
-  --card: #f1f5f9;
-  --text: #0f172a;
-}
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
-  transition: 0.3s;
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -24,29 +18,45 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  backdrop-filter: blur(10px);
+  background: rgba(2,6,23,0.8);
   position: sticky;
   top: 0;
+  backdrop-filter: blur(10px);
 }
 
 .navbar a {
-  margin: 0 10px;
-  color: var(--primary);
+  margin-left: 15px;
   text-decoration: none;
+  color: var(--primary);
 }
 
 /* Hero */
 .hero {
   height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #1e293b, #020617);
+  justify-content: center;
+  text-align: center;
 }
 
-.hero h1 {
-  font-size: 40px;
+.hero span {
+  color: var(--primary);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 /* Grid */
@@ -60,14 +70,12 @@ body {
 .card {
   background: var(--card);
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 0.3s;
-  box-shadow: 0 0 10px rgba(56,189,248,0.2);
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(56,189,248,0.6);
 }
 
 /* Animation */
@@ -82,11 +90,8 @@ body {
   transform: translateY(0);
 }
 
-section {
-  padding: 60px 20px;
+footer {
   text-align: center;
-}
-
-button {
-  cursor: pointer;
+  padding: 20px;
+  background: #020617;
 }
