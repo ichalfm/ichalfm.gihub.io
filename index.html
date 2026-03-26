@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahrizal Mawaird</title>
+  <title>Portfolio Saya</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="navbar">
-  <h2 class="logo">Fahrizal Mawarid</h2>
+  <h2 class="logo">Fahrizal</h2>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Project</a>
-    <button id="toggleTheme">🌙</button>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1><span id="typing"></span></h1>
-  <p>Backend • Web Developer • SQL Specialist</p>
+  <div class="hero-content">
+    <h1>Hi, Saya <span>Developer</span> 👋</h1>
+    <p>Backend • Web Developer • SQL Specialist</p>
+    <a href="#projects" class="btn">Lihat Project</a>
+  </div>
 </section>
 
 <section id="about" class="fade">
   <h2>About Me</h2>
   <p>
-    Web Developer fokus backend (PHP, SQL Server, Dashboard, Reporting System).
+    Saya seorang Web Developer yang fokus di backend development menggunakan PHP, SQL Server,
+    Regulatory Report dan pembuatan dashboard interaktif.
   </p>
 </section>
 
@@ -44,8 +48,30 @@
 </section>
 
 <section id="projects" class="fade">
-  <h2>GitHub Projects</h2>
-  <div id="repoList" class="grid"></div>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card project">
+      <h3>Dashboard Admin</h3>
+      <p>Web dashboard menggunakan PHP, jqGrid, dan AdminLTE</p>
+    </div>
+
+    <div class="card project">
+      <h3>Reporting System</h3>
+      <p>Integrasi Crystal Report dengan Java & database</p>
+    </div>
+
+    <div class="card project">
+      <h3>Financial System</h3>
+      <p>Pengolahan data obligasi & repo menggunakan SQL Server</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>Email: fahrizalmawarid9@gmail.com</p>
 </section>
 
 <footer>
